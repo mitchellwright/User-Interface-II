@@ -25,13 +25,13 @@ Portfolio websites are a great way to show off your work to friends, family, and
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 ### Task 2: Minimum Viable Product
 
 Once your repository is set up, practice what you learned today to create a portfolio site from the wireframe of your choosing. **You may choose any of the three wireframes in the "Wireframe Options" folder above.** Your complete project should look similar to the wireframe you chose, and include all of the following elements:
