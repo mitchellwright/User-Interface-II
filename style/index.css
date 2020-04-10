@@ -54,9 +54,24 @@ html {
     box-sizing: border-box;
 }
 
+header {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
 h1 {
     font-size: 36px;
-    text-align: center;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+	margin-bottom: 1.5rem;
 }
 
 .navbar {
@@ -64,7 +79,82 @@ h1 {
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 10em;
+}
+
+.hero {
+	max-width: 60%;
+	margin: 0 auto 3rem auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero img {
+	border-radius: 12px;
+}
+
+.right-content {
+	margin: 0 2rem;
+}
+
+.hero h2, .hero a {
+	margin: 1rem 0 2rem 0;
+}
+
+.hero p {
+	margin: 2.5em 0;
+}
+
+.gallery {
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery-item {
+	margin: 1em 0;
+}
+
+.gallery-item img {
+	border-radius: 25px;
+	padding: 12px;
+}
+
+.button {
+	border: 1px solid #000;
+	border-radius: 20px;
+	border-width: 2px;
+	padding: 0.5rem;
+	background-color: transparent;
+	border-color: #000;
+	color: #000;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.button:hover {
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+
+footer {
+	max-width: 40%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+footer .button {
+	width: max-content;
+	text-align: center;
+	display:inline-block;
+	margin: 0 auto;
 }
