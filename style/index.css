@@ -51,7 +51,12 @@ table {
 
 
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
 }
 
 header {
@@ -60,17 +65,17 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 3.6rem; /* 36px */
 	text-align: center;
 	margin-bottom: 1rem;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 2.4rem; /* 24px */
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 1.8rem; /* 18px */
 	margin-bottom: 1.5rem;
 }
 
@@ -92,7 +97,8 @@ nav {
 }
 
 .hero img {
-	border-radius: 12px;
+	border-radius: 1.2rem; /* 12px */
+	width: 30rem;
 }
 
 .right-content {
@@ -120,14 +126,15 @@ nav {
 }
 
 .gallery-item img {
-	border-radius: 25px;
-	padding: 12px;
+	border-radius: 2.5rem; /* 25px */
+	padding: 1.2rem; /* 12px */
+	width: 25rem;
 }
 
 .button {
 	border: 1px solid #000;
-	border-radius: 20px;
-	border-width: 2px;
+	border-radius: 2rem; /* 20px */
+	border-width: 0.2rem; /* 2px */
 	padding: 0.5rem;
 	background-color: transparent;
 	border-color: #000;
@@ -167,4 +174,23 @@ footer .button {
 
 .fa {
 	color: #000;
+}
+
+@media(max-width: 800px) {
+	nav {
+		padding: 0 2em;
+	}
+	.hero {
+		flex-direction: column;
+		text-align: center;
+	}
+	.hero p {
+		text-align: left;
+	}
+}
+
+@media(max-width: 500px) {
+	.social {
+		flex-direction: column;
+	}
 }
