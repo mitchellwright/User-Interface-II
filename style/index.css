@@ -1,1 +1,196 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+   CSS Reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+header {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.6rem; /* 36px */
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 2.4rem; /* 24px */
+}
+
+h3 {
+	font-size: 1.8rem; /* 18px */
+	margin-bottom: 1.5rem;
+}
+
+.navbar {
+    padding: 2rem 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 10em;
+}
+
+.hero {
+	max-width: 60%;
+	margin: 0 auto 3rem auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero img {
+	border-radius: 1.2rem; /* 12px */
+	width: 30rem;
+}
+
+.right-content {
+	margin: 0 2rem;
+}
+
+.hero h2, .hero a {
+	margin: 1rem 0 2rem 0;
+}
+
+.hero p {
+	margin: 2.5em 0;
+}
+
+.gallery {
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery-item {
+	margin: 1em 0;
+}
+
+.gallery-item img {
+	border-radius: 2.5rem; /* 25px */
+	padding: 1.2rem; /* 12px */
+	width: 25rem;
+}
+
+.button {
+	border: 1px solid #000;
+	border-radius: 2rem; /* 20px */
+	border-width: 0.2rem; /* 2px */
+	padding: 0.5rem;
+	background-color: transparent;
+	border-color: #000;
+	color: #000;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.button:hover {
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+
+footer {
+	max-width: 40%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+footer .button {
+	width: max-content;
+	text-align: center;
+	display:inline-block;
+	margin: 0 auto;
+}
+
+.social {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+}
+
+.fa {
+	color: #000;
+}
+
+@media(max-width: 800px) {
+	nav {
+		padding: 0 2em;
+	}
+	.hero {
+		flex-direction: column;
+		text-align: center;
+	}
+	.hero p {
+		text-align: left;
+	}
+}
+
+@media(max-width: 500px) {
+	.social {
+		flex-direction: column;
+	}
+}
